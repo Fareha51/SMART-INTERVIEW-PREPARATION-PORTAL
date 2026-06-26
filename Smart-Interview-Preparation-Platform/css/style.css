@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+}
+
+.login-container{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.login-card{
+    background:white;
+    width:450px;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+.login-card h1{
+    margin-bottom:15px;
+    color:#1e3a8a;
+}
+
+.login-card p{
+    margin-bottom:20px;
+    color:gray;
+}
+
+.login-card input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+.login-card button{
+    width:100%;
+    padding:12px;
+    border:none;
+    background:#2563eb;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.login-card button:hover{
+    background:#1d4ed8;
+}
+.navbar{
+    background:#1e3a8a;
+    color:white;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+}
+
+.navbar li{
+    margin-left:20px;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+}
+
+.dashboard-container{
+    padding:40px;
+}
+
+.dashboard-container h1{
+    margin-bottom:30px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+
+.card h2{
+    color:#2563eb;
+    margin-bottom:10px;
+}
+.tracker-container{
+    padding:40px;
+}
+
+.tracker-container input,
+.tracker-container select{
+    padding:10px;
+    margin-right:10px;
+}
+
+.tracker-container button{
+    padding:10px 15px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+table{
+    width:100%;
+    margin-top:20px;
+    border-collapse:collapse;
+    background:white;
+}
+
+table th,
+table td{
+    border:1px solid #ddd;
+    padding:12px;
+}
+
+table th{
+    background:#2563eb;
+    color:white;
+}

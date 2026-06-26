@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test</title>
+</head>
+
+<body>
+
+<div id="questionBox"></div>
+<button onclick="submitTest()">Submit</button>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    fetch("backend/get_questions.php")
+    .then(res => res.json())
+    .then(data => {
+
+        console.log(data);
+
+        let container = document.getElementById("questionBox");
+        container.innerHTML = "";
+
+        data.forEach(q => {
+            container.innerHTML += `
+                <div>
+                    <h3>${q.question_text}</h3>
+
+                    <label><input type="radio" name="${q.question_id}" value="A"> ${q.option_a}</label><br>
+                    <label><input type="radio" name="${q.question_id}" value="B"> ${q.option_b}</label><br>
+                    <label><input type="radio" name="${q.question_id}" value="C"> ${q.option_c}</label><br>
+                    <label><input type="radio" name="${q.question_id}" value="D"> ${q.option_d}</label><br>
+                </div>
+                <hr>
+            `;
+        });
+
+    })
+    .catch(err => console.log("Error:", err));
+
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <h2>SIPP Dashboard</h2>
+
+    <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="tracker.html">DSA Tracker</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+    </ul>
+</nav>
+
+<div class="dashboard-container">
+
+    <h1 id="welcome"></h1>
+
+    <div class="cards">
+
+        <div class="card">
+            <h2>120</h2>
+            <p>Problems Solved</p>
+        </div>
+
+        <div class="card">
+            <h2>5</h2>
+            <p>Upcoming Interviews</p>
+        </div>
+
+        <div class="card">
+            <h2>87%</h2>
+            <p>Preparation Score</p>
+        </div>
+
+        <div class="card">
+            <h2>18</h2>
+            <p>Current Streak</p>
+        </div>
+
+    </div>
+
+    <!-- ✅ REAL BUTTON (IMPORTANT) -->
+    <button onclick="startTest()">Start Test</button>
+
+</div>
+
+<script>
+let name = localStorage.getItem("name");
+
+document.getElementById("welcome").innerHTML =
+"Welcome, " + name + " 👋";
+
+function startTest() {
+    window.location.href = "test.html";
+}
+</script>
+
+</body>
+</html>

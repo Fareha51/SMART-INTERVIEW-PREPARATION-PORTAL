@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume Upload</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+
+    <h2>SIPP Dashboard</h2>
+
+    <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="tracker.html">DSA Tracker</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+    </ul>
+
+</nav>
+
+<div class="tracker-container">
+
+    <h1>Resume Upload</h1>
+
+    <input type="file" id="resumeFile">
+
+    <button onclick="uploadResume()">
+        Upload Resume
+    </button>
+
+    <h3 id="resumeStatus"></h3>
+
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>

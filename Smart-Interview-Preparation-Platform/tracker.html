@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DSA Tracker</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+
+    <h2>SIPP Dashboard</h2>
+
+    <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="tracker.html">DSA Tracker</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+    </ul>
+
+</nav>
+
+<div class="tracker-container">
+
+    <h1>DSA Problem Tracker</h1>
+
+    <input type="text" id="problemName" placeholder="Problem Name">
+
+    <select id="topic">
+        <option>Arrays</option>
+        <option>Strings</option>
+        <option>Linked List</option>
+        <option>Trees</option>
+        <option>Graphs</option>
+    </select>
+
+    <button onclick="addProblem()">
+        Add Problem
+    </button>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Problem</th>
+                <th>Topic</th>
+            </tr>
+        </thead>
+
+        <tbody id="problemTable">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
